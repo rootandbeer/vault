@@ -5,8 +5,8 @@ genre:
   - "[[Documentary]]"
 year: 2026
 cast: []
-rating:
-status:
+rating: 3.9
+status: Completed
 created: 2026-09-09
 last: 2026-09-09
 ---
