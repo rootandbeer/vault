@@ -1,0 +1,284 @@
+[
+  {
+    "id": "2d038d0e-bf89-41e3-a0b3-d127dbdf7fe0",
+    "dateTime": "2026-07-20T16:32:08-07:00",
+    "moodRating": 3,
+    "emotions": [
+      "content",
+      "fine"
+    ],
+    "note": ""
+  },
+  {
+    "id": "32c47eba-e06c-4724-a4b6-918ad1ec75ae",
+    "dateTime": "2026-07-20T19:38:59-07:00",
+    "moodRating": 5,
+    "emotions": [
+      "pleased",
+      "satisfied",
+      "happy"
+    ],
+    "note": ""
+  },
+  {
+    "id": "d7ca650c-05c3-41d7-8d93-885a6241234b",
+    "dateTime": "2026-07-21T18:00:35-07:00",
+    "moodRating": 5,
+    "emotions": [
+      "content",
+      "relieved",
+      "peaceful"
+    ],
+    "note": ""
+  },
+  {
+    "id": "fcffd458-26c4-463e-8554-908439a61a26",
+    "dateTime": "2026-07-21T18:05:23-07:00",
+    "moodRating": 5,
+    "emotions": [
+      "content",
+      "peaceful",
+      "relieved"
+    ],
+    "note": ""
+  },
+  {
+    "id": "b171ef26-17e0-4e8e-b6f3-f11e72a5283e",
+    "dateTime": "2026-07-22T14:43:49-07:00",
+    "moodRating": 4,
+    "emotions": [
+      "pleased",
+      "satisfied",
+      "content"
+    ],
+    "note": ""
+  },
+  {
+    "id": "f933b4f0-0606-4387-baf1-ea3582dd9ac7",
+    "dateTime": "2026-07-23T18:21:37-07:00",
+    "moodRating": 4,
+    "emotions": [
+      "delighted",
+      "hopeful",
+      "anxious"
+    ],
+    "note": "overall feel good but stressed because I have to take the garage down in a couple of days"
+  },
+  {
+    "id": "9b22243f-a243-49c6-86b3-4a463cb98f8f",
+    "dateTime": "2026-07-24T19:36:51-07:00",
+    "moodRating": 4,
+    "emotions": [
+      "content",
+      "pleased",
+      "satisfied"
+    ],
+    "note": ""
+  },
+  {
+    "id": "ad9bc590-01b8-48ba-9fe0-61a96a44ac59",
+    "dateTime": "2026-07-25T15:24:02-07:00",
+    "moodRating": 4,
+    "emotions": [
+      "triumphant",
+      "optimistic",
+      "relieved",
+      "hopeful"
+    ],
+    "note": ""
+  },
+  {
+    "id": "0f32826a-58f5-4b70-a8c3-c419e199f9c0",
+    "dateTime": "2026-07-25T20:04:39-07:00",
+    "moodRating": 3,
+    "emotions": [
+      "stressed",
+      "euphoric",
+      "fine"
+    ],
+    "note": ""
+  },
+  {
+    "id": "451ba89b-51c4-4bbf-af02-94872e356175",
+    "dateTime": "2026-07-26T09:35:04-07:00",
+    "moodRating": 3,
+    "emotions": [
+      "annoyed",
+      "stressed",
+      "nervous"
+    ],
+    "note": "Roselyn misplaced the wooden strip that goes from the living room to the dining room."
+  },
+  {
+    "id": "44a84c9f-c2a4-4018-9564-062507fb94ee",
+    "dateTime": "2026-07-26T20:52:37-07:00",
+    "moodRating": 4,
+    "emotions": [
+      "fine",
+      "satisfied",
+      "blissful"
+    ],
+    "note": "Just feeling relaxed mostly"
+  },
+  {
+    "id": "88773680-d166-4d8a-8025-c14c4b61bb21",
+    "dateTime": "2026-07-28T13:00:00-07:00",
+    "moodRating": 2,
+    "emotions": [
+      "angry",
+      "irritated",
+      "annoyed",
+      "agitated"
+    ],
+    "note": "work"
+  },
+  {
+    "id": "e2920e1f-0f62-4c29-bc60-04c5ad3bac0f",
+    "dateTime": "2026-07-28T19:56:15-07:00",
+    "moodRating": 3,
+    "emotions": [
+      "content",
+      "fine"
+    ],
+    "note": ""
+  },
+  {
+    "id": "1fa6e563-8f1b-43dc-8ab2-4b37aa8bbd5a",
+    "dateTime": "2026-07-29T20:06:40-07:00",
+    "moodRating": 2,
+    "emotions": [
+      "annoyed",
+      "aggravated",
+      "irritated"
+    ],
+    "note": ""
+  },
+  {
+    "id": "824b634f-0330-493b-8668-e55faf4f6957",
+    "dateTime": "2026-07-30T19:17:03-07:00",
+    "moodRating": 3,
+    "emotions": [
+      "irritated",
+      "content",
+      "fine"
+    ],
+    "note": ""
+  },
+  {
+    "id": "40ae9b9a-420f-4c2c-b78a-d8cbce4b0ae0",
+    "dateTime": "2026-07-31T18:48:37-07:00",
+    "moodRating": 3,
+    "emotions": [
+      "ok",
+      "fine",
+      "perplexed"
+    ],
+    "note": ""
+  },
+  {
+    "id": "a928fb95-2f51-4de0-9811-14100012f8b5",
+    "dateTime": "2026-08-03T19:24:33-07:00",
+    "moodRating": 3,
+    "emotions": [
+      "fine",
+      "ok"
+    ],
+    "note": ""
+  },
+  {
+    "id": "29be390c-1203-4046-b997-89f54f83de11",
+    "dateTime": "2026-08-05T20:02:09-07:00",
+    "moodRating": 3,
+    "emotions": [
+      "content",
+      "fine"
+    ],
+    "note": ""
+  },
+  {
+    "id": "4cc68b9b-54d1-4992-92fb-9e9326dd4647",
+    "dateTime": "2026-08-05T20:02:35-07:00",
+    "moodRating": 3,
+    "emotions": [
+      "fine",
+      "agitated",
+      "content"
+    ],
+    "note": ""
+  },
+  {
+    "id": "4028a03f-0b1a-414a-ba64-d49518c7d77d",
+    "dateTime": "2026-08-08T15:10:05-07:00",
+    "moodRating": 3,
+    "emotions": [
+      "aggravated",
+      "irritated",
+      "fine"
+    ],
+    "note": ""
+  },
+  {
+    "id": "312b2acd-c64e-4709-a948-8c82f9748773",
+    "dateTime": "2026-08-10T20:37:25-07:00",
+    "moodRating": 4,
+    "emotions": [
+      "joyful",
+      "happy",
+      "amused"
+    ],
+    "note": ""
+  },
+  {
+    "id": "2f3f147b-0352-4576-9be4-7277293ace14",
+    "dateTime": "2026-08-11T19:05:54-07:00",
+    "moodRating": 2,
+    "emotions": [
+      "content",
+      "annoyed",
+      "sad",
+      "inferior"
+    ],
+    "note": "Not sure why"
+  },
+  {
+    "id": "616f3377-fdfe-47fa-88cd-7e71c5b55006",
+    "dateTime": "2026-08-21T20:52:40-07:00",
+    "moodRating": 3,
+    "emotions": [
+      "content"
+    ],
+    "note": ""
+  },
+  {
+    "id": "cbe42df5-83c5-4f8b-82ba-1db57333d9e1",
+    "dateTime": "2026-08-22T21:53:19-07:00",
+    "moodRating": 3,
+    "emotions": [
+      "pleased",
+      "satisfied",
+      "amused"
+    ],
+    "note": ""
+  },
+  {
+    "id": "49668e97-f030-4dfd-8819-b813cb0980cb",
+    "dateTime": "2026-08-23T21:14:01-07:00",
+    "moodRating": 3,
+    "emotions": [
+      "annoyed",
+      "irritated"
+    ],
+    "note": ""
+  },
+  {
+    "id": "af0a0c1e-402e-4002-b8b3-3c98a954fe26",
+    "dateTime": "2026-09-06T21:00:41-07:00",
+    "moodRating": 4,
+    "emotions": [
+      "content",
+      "pleased",
+      "satisfied"
+    ],
+    "note": ""
+  }
+]

@@ -1,0 +1,144 @@
+filters:
+  and:
+    - note.categories.contains(link("Security"))
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Name
+  note.domain:
+    displayName: Domain
+  note.type:
+    displayName: Type
+  note.topics:
+    displayName: Topics
+  note.status:
+    displayName: Status
+  note.severity:
+    displayName: Severity
+  note.platform:
+    displayName: Platform
+  note.cwe:
+    displayName: CWE
+  note.owasp:
+    displayName: OWASP
+  note.tools:
+    displayName: Tools
+  note.updated:
+    displayName: Updated
+  note.created:
+    displayName: Created
+views:
+  - type: table
+    name: All
+    order:
+      - file.name
+      - domain
+      - type
+      - severity
+      - status
+      - topics
+      - updated
+    sort:
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 250
+      note.domain: 160
+      note.type: 120
+      note.severity: 100
+      note.status: 100
+      note.topics: 180
+  - type: table
+    name: By Domain
+    order:
+      - file.name
+      - domain
+      - type
+      - severity
+      - status
+    sort:
+      - property: domain
+        direction: ASC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 250
+      note.domain: 160
+      note.type: 120
+  - type: table
+    name: By Type
+    order:
+      - file.name
+      - type
+      - domain
+      - severity
+      - platform
+    sort:
+      - property: type
+        direction: ASC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 250
+      note.type: 120
+      note.domain: 160
+  - type: table
+    name: Reporting
+    filters:
+      or:
+        - note.type.eq("Reporting")
+        - note.type.eq("Scoring")
+    order:
+      - file.name
+      - type
+      - topics
+      - updated
+    sort:
+      - property: type
+        direction: ASC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 280
+      note.type: 120
+      note.topics: 180
+  - type: table
+    name: Backlog
+    filters:
+      or:
+        - note.status.eq("Draft")
+        - note.status.eq("In Progress")
+    order:
+      - file.name
+      - domain
+      - type
+      - status
+    sort:
+      - property: status
+        direction: ASC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 250
+      note.domain: 160
+      note.status: 100
+  - type: table
+    name: Coverage
+    order:
+      - file.name
+      - owasp
+      - cwe
+      - severity
+      - domain
+    sort:
+      - property: owasp
+        direction: ASC
+      - property: cwe
+        direction: ASC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 250
+      note.owasp: 200
+      note.cwe: 100
+      note.severity: 100

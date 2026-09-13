@@ -1,0 +1,12 @@
+views:
+  - type: image-gallery
+    name: View
+    filters:
+      and:
+        - file.path.startsWith("Attachments/")
+        - file.folder.contains(this.file.name)
+    order:
+      - file.name
+    layout: vertical
+    radius: 0
+    gutter: 8

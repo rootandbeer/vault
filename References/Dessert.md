@@ -1,0 +1,4 @@
+---
+tags:
+---
+![[Recipes.base#Type]]

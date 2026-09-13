@@ -1,0 +1,144 @@
+filters:
+  and:
+    - "!status.isEmpty()"
+    - '!file.name.contains("template")'
+formulas:
+  prog_percent: progress / 100
+  prog_text: if(formula.prog_percent > 0, (formula.prog_percent * 100).round(), "0") + "%"
+  prog_bar: if(formula.prog_percent * 10 > 0, "▰".repeat (number(formula.prog_percent * 10))) + if((formula.prog_percent * 10).floor() < 10, "▱▱▱▱▱▱▱▱▱▱".slice( 0, 10 - (formula.prog_percent * 10).floor()), "").toString()
+  lucide-icon: if(status=="In Progress", "arrow-right".icon(), if(status=="Focus", "flame".icon(), if(status=="On Hold", "pause".icon(), "")))
+  prog: formula.prog_bar
+  sortByStatus: |-
+    number(
+    if(status=="In Progress", 4, 
+    if(status=="Focus", 5, 
+    if(status=="To Do", 3, 
+    if(status=="On Hold", 1, 0
+    )))))
+  dead_icon: if(date(deadline) < today(), "skull".icon(), "")
+  titleLink: link(file, if(title, title, file.basename))
+  TillDDL: number((date(deadline)-today()).days)
+  statusOfDDL: |-
+    if(formula["TillDDL"].isEmpty(),"❔ None", 
+    if(formula["TillDDL"]>= 15, "🟠 Long Term", 
+    if(formula["TillDDL"] < 1 && formula["TillDDL"] >= 0, "🛑 Due Today", 
+      (
+       if(formula["TillDDL"]< 0, "🔴 Overdue ",
+       if(formula["TillDDL"]<= 5, "🟡 Only ", "🟢 Still "))
+      ) + (date(deadline)-today())
+    )))
+  statusAsEmoji: |-
+    if(status=="In Progress", "▶️", if(status=="Focus", "🔥", 
+    if(status=="To Do", "🚩", 
+    if(status=="Cancelled", "❌", if(status=="On Hold", "📚", ""
+    )))))
+  titleAsLink: link(file, if(icon, icon+" ", "")+title)
+  passionText: if(passion== 5, "😤SUPER HIGH", if(passion==4, "😄HIGH", if(passion==3, "🙂NORMAL", if(passion==2, "🤔LOW", if(passion==1, "😮‍💨QUIT", "NONE")))))
+  sortByDDL: if(formula["TillDDL"].isEmpty(),"5-❔ None", if(formula["TillDDL"]>= 15, "3-🟠 Long Term", if(formula["TillDDL"] <= 3 && formula["TillDDL"] >= 0, "2-🟡 Near ", (if(formula["TillDDL"]< 0, "0-🔴 Overdue ", if(formula["TillDDL"]<= 7, "2-🟡 Near ", "4-🟢 Easy "))) )))
+  embededImage: file.embeds[0]
+properties:
+  formula.prog_text:
+    displayName: prog_text
+  formula.prog_percent:
+    displayName: prog_percent
+  formula.lucide-icon:
+    displayName: Icon
+  file.name:
+    displayName: name
+  property.type:
+    displayName: type
+  property.icon:
+    displayName: icon
+  property.deadline:
+    displayName: 死线
+  property.passion:
+    displayName: passion
+  formula.prog:
+    displayName: progress
+  note.status:
+    displayName: Status
+  formula.titleLink:
+    displayName: project
+  note.passion:
+    displayName: "Priority #"
+  note.deadline:
+    displayName: DDL
+  note.progress:
+    displayName: ​prog
+  note.icon:
+    displayName: " "
+  formula.titleAsLink:
+    displayName: project
+  formula.passionText:
+    displayName: Priority
+  formula.embededImage:
+    displayName: embeds
+views:
+  - type: table
+    name: All Projects
+    order:
+      - formula.statusAsEmoji
+      - status
+      - formula.titleLink
+      - progress
+    sort:
+      - property: formula.sortByDDL
+        direction: ASC
+      - property: formula.sortByStatus
+        direction: DESC
+      - property: formula.TillDDL
+        direction: ASC
+      - property: passion
+        direction: DESC
+      - property: progress
+        direction: DESC
+    limit: 15
+    columnSize:
+      formula.statusAsEmoji: 30
+      note.status: 114
+      formula.titleLink: 275
+  - type: table
+    name: Ongoing
+    filters:
+      and:
+        - status.contains("In Progress")
+    order:
+      - formula.titleLink
+      - categories
+      - formula.passionText
+      - formula.prog
+      - deadline
+      - formula.statusOfDDL
+      - formula.sortByDDL
+      - formula.sortByStatus
+    sort:
+      - property: deadline
+        direction: ASC
+      - property: formula.sortByStatus
+        direction: DESC
+      - property: formula.TillDDL
+        direction: ASC
+      - property: progress
+        direction: DESC
+    limit: 5
+    columnSize:
+      formula.titleLink: 169
+      formula.passionText: 133
+      formula.prog: 97
+      note.deadline: 146
+      formula.statusOfDDL: 154
+      formula.sortByDDL: 123
+      formula.sortByStatus: 59
+  - type: cards
+    name: Gallery
+    filters:
+      and:
+        - progress >= 0
+    order:
+      - formula.titleLink
+      - formula.prog
+      - formula.statusAsEmoji
+      - deadline
+    limit: 30
+    imageAspectRatio: 0.5
+    image: formula.embededImage

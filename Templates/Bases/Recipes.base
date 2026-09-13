@@ -1,0 +1,47 @@
+filters:
+  and:
+    - note.categories.contains(link("Recipes"))
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Name
+  note.author:
+    displayName: Author
+  note.type:
+    displayName: Type
+  note.ingredients:
+    displayName: Ingredients
+  note.cuisine:
+    displayName: Cuisine
+  note.rating:
+    displayName: Rating
+views:
+  - type: table
+    name: Recipes
+    order:
+      - file.name
+      - ingredients
+      - rating
+      - type
+    sort:
+      - property: ingredients
+        direction: DESC
+      - property: author
+        direction: DESC
+    columnSize:
+      note.ingredients: 218
+      note.rating: 81
+      note.type: 201
+  - type: table
+    name: Type
+    filters:
+      and:
+        - list(type).contains(this)
+    order:
+      - file.name
+      - ingredients
+      - rating
+      - cuisine
+    columnSize:
+      note.ingredients: 276
+      note.rating: 92

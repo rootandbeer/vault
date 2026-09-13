@@ -1,0 +1,73 @@
+filters:
+  and:
+    - categories.contains(link("Books"))
+    - '!file.name.contains("Template")'
+properties:
+  note.author:
+    displayName: Author
+  file.name:
+    displayName: Name
+  note.year:
+    displayName: Year
+  note.genre:
+    displayName: Genre
+views:
+  - type: table
+    name: Books
+    order:
+      - file.name
+      - author
+      - year
+      - pages
+      - rating
+      - topics
+      - last
+    sort:
+      - property: file.name
+        direction: ASC
+    columnSize:
+      note.year: 71
+      note.rating: 70
+      note.pages: 102
+  - type: table
+    name: Top rated
+    filters:
+      and:
+        - rating > 4
+    order:
+      - file.name
+      - rating
+      - last
+    sort:
+      - property: last
+        direction: DESC
+  - type: table
+    name: Author
+    filters:
+      and:
+        - list(author).contains(this)
+    order:
+      - file.name
+      - year
+      - genre
+    sort:
+      - property: genre
+        direction: ASC
+  - type: table
+    name: Genre
+    filters:
+      and:
+        - list(genre).contains(this)
+    order:
+      - file.name
+      - year
+      - genre
+  - type: cards
+    name: Books-card
+    order:
+      - file.name
+      - author
+      - rating
+    image: note.cover
+    imageFit: contain
+    cardSize: 120

@@ -1,0 +1,24 @@
+filters:
+  and:
+    - note.categories.contains(link("Guides"))
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Name
+  note.topics:
+    displayName: Topics
+  note.created:
+    displayName: Created
+views:
+  - type: table
+    name: Guides
+    order:
+      - file.name
+      - topics
+      - created
+    sort:
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 390
+      note.topics: 200

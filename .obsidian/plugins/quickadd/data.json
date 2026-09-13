@@ -1,0 +1,432 @@
+{
+  "choices": [
+    {
+      "id": "e689af6e-ad0e-45a1-859d-064703828cce",
+      "name": "Add Goal",
+      "type": "Macro",
+      "command": false,
+      "runOnStartup": false,
+      "macro": {
+        "name": "Add Goal",
+        "id": "0b06ca27-f64b-434a-baa0-5218aaff8659",
+        "commands": [
+          {
+            "name": "Create Goal Note",
+            "type": "NestedChoice",
+            "id": "28cb8f5a-1827-4d37-b3f0-9f5fd86c99a9",
+            "choice": {
+              "id": "4f64142c-209b-4c15-8985-3158b2093f41",
+              "name": "Create Goal Note",
+              "type": "Template",
+              "command": false,
+              "templatePath": "Templates/autotracking_goal_item_template.md",
+              "fileNameFormat": {
+                "enabled": true,
+                "format": "{{date}} - {{VALUE:Goal}}"
+              },
+              "folder": {
+                "enabled": true,
+                "folders": [
+                  "goals"
+                ],
+                "chooseWhenCreatingNote": false,
+                "createInSameFolderAsActiveFile": false,
+                "chooseFromSubfolders": false
+              },
+              "appendLink": false,
+              "openFile": false,
+              "fileOpening": {
+                "location": "tab",
+                "direction": "vertical",
+                "mode": "default",
+                "focus": true
+              },
+              "fileExistsBehavior": {
+                "kind": "prompt"
+              }
+            }
+          },
+          {
+            "name": "Wait",
+            "type": "Wait",
+            "id": "a0a0151a-e4c1-433b-900c-31b0c6aeb78a",
+            "time": 200
+          },
+          {
+            "name": "Send To Kanban Board",
+            "type": "NestedChoice",
+            "id": "dc55ac05-fbf0-4e73-a747-799718bb8007",
+            "choice": {
+              "id": "aa0a2dd7-4c92-4934-9fdd-338c5992723a",
+              "name": "Send To Kanban Board",
+              "type": "Capture",
+              "command": false,
+              "appendLink": {
+                "enabled": true,
+                "placement": "replaceSelection",
+                "requireActiveFile": false,
+                "linkType": "link"
+              },
+              "captureTo": "References/Goals.md",
+              "captureToActiveFile": false,
+              "captureToCanvasNodeId": "",
+              "activeFileWritePosition": "cursor",
+              "createFileIfItDoesntExist": {
+                "enabled": false,
+                "createWithTemplate": false,
+                "template": ""
+              },
+              "format": {
+                "enabled": true,
+                "format": "[[{{DATE}} - {{VALUE:Goal}}|{{VALUE:Goal}}]]"
+              },
+              "insertAfter": {
+                "enabled": true,
+                "after": "## {{VALUE:Professional,Physical,Knowledge,Wealth,Life}}",
+                "insertAtEnd": false,
+                "considerSubsections": false,
+                "createIfNotFound": false,
+                "createIfNotFoundLocation": "top",
+                "inline": false,
+                "replaceExisting": false,
+                "blankLineAfterMatchMode": "auto"
+              },
+              "newLineCapture": {
+                "enabled": false,
+                "direction": "below"
+              },
+              "prepend": false,
+              "task": true,
+              "openFile": false,
+              "fileOpening": {
+                "location": "tab",
+                "direction": "vertical",
+                "mode": "default",
+                "focus": true
+              },
+              "templater": {
+                "afterCapture": "none"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "c868481c-3ec8-4ce5-b3cb-4da052ef9214",
+      "name": "Add Project",
+      "type": "Macro",
+      "command": false,
+      "runOnStartup": false,
+      "macro": {
+        "name": "Add Project",
+        "id": "d81bedf7-b454-4f10-adb1-eb203e7c9cb0",
+        "commands": [
+          {
+            "name": "Create Project Note",
+            "type": "NestedChoice",
+            "id": "40557a7c-6921-41ab-af62-c02ddcd29450",
+            "choice": {
+              "id": "a5570d3b-5131-4944-91f5-1fce4ec16b54",
+              "name": "Create Project Note",
+              "type": "Template",
+              "command": false,
+              "templatePath": "Templates/project_item_template.md",
+              "fileNameFormat": {
+                "enabled": true,
+                "format": "; {{VALUE:⚒ Add Project}}"
+              },
+              "folder": {
+                "enabled": true,
+                "folders": [
+                  "Projects"
+                ],
+                "chooseWhenCreatingNote": false,
+                "createInSameFolderAsActiveFile": false,
+                "chooseFromSubfolders": false
+              },
+              "appendLink": false,
+              "openFile": false,
+              "fileOpening": {
+                "location": "tab",
+                "direction": "vertical",
+                "mode": "default",
+                "focus": true
+              },
+              "fileExistsBehavior": {
+                "kind": "prompt"
+              }
+            }
+          },
+          {
+            "name": "Wait",
+            "type": "Wait",
+            "id": "e94301b6-acf0-4191-ac86-ed1b494e3ec2",
+            "time": 300
+          },
+          {
+            "name": "Capture to Project Board",
+            "type": "NestedChoice",
+            "id": "9c17ffd2-7746-4d96-8de5-ce5c2e4ebd8b",
+            "choice": {
+              "id": "ae27c162-45ea-4132-a529-0cac24ef86a3",
+              "name": "Capture to Project Board",
+              "type": "Capture",
+              "command": false,
+              "appendLink": {
+                "enabled": true,
+                "placement": "replaceSelection",
+                "requireActiveFile": false,
+                "linkType": "link"
+              },
+              "captureTo": "References/Project Board.md",
+              "captureToActiveFile": false,
+              "captureToCanvasNodeId": "",
+              "activeFileWritePosition": "cursor",
+              "createFileIfItDoesntExist": {
+                "enabled": false,
+                "createWithTemplate": false,
+                "template": ""
+              },
+              "format": {
+                "enabled": true,
+                "format": "[[; {{VALUE:⚒ Add Project}}|{{VALUE:⚒ Add Project}}]]"
+              },
+              "insertAfter": {
+                "enabled": true,
+                "after": "## Todo",
+                "insertAtEnd": false,
+                "considerSubsections": false,
+                "createIfNotFound": false,
+                "createIfNotFoundLocation": "top",
+                "inline": false,
+                "replaceExisting": false,
+                "blankLineAfterMatchMode": "auto"
+              },
+              "newLineCapture": {
+                "enabled": false,
+                "direction": "below"
+              },
+              "prepend": false,
+              "task": true,
+              "openFile": false,
+              "fileOpening": {
+                "location": "tab",
+                "direction": "vertical",
+                "mode": "default",
+                "focus": true
+              },
+              "templater": {
+                "afterCapture": "none"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "inputPrompt": "single-line",
+  "persistInputPromptDrafts": true,
+  "useSelectionAsCaptureValue": true,
+  "searchNestedChoices": true,
+  "templateFolderLauncherRow": "bottom",
+  "devMode": false,
+  "templateFolderPaths": [
+    "Templates"
+  ],
+  "announceUpdates": "major",
+  "version": "2.22.0",
+  "globalVariables": {},
+  "onePageInputEnabled": false,
+  "disableOnlineFeatures": true,
+  "enableUriCallbacks": false,
+  "enableRibbonIcon": false,
+  "showCaptureNotification": true,
+  "showInputCancellationNotification": false,
+  "enableTemplatePropertyTypes": false,
+  "dateAliases": {
+    "t": "today",
+    "tm": "tomorrow",
+    "yd": "yesterday",
+    "nw": "next week",
+    "nm": "next month",
+    "ny": "next year",
+    "lw": "last week",
+    "lm": "last month",
+    "ly": "last year"
+  },
+  "ai": {
+    "defaultModel": "Ask me",
+    "defaultSystemPrompt": "As an AI assistant within Obsidian, your primary goal is to help users manage their ideas and knowledge more effectively. Format your responses using Markdown syntax. Please use the [[Obsidian]] link format. You can write aliases for the links by writing [[Obsidian|the alias after the pipe symbol]]. To use mathematical notation, use LaTeX syntax. LaTeX syntax for larger equations should be on separate lines, surrounded with double dollar signs ($$). You can also inline math expressions by wrapping it in $ symbols. For example, use $$w_{ij}^{\\text{new}}:=w_{ij}^{\\text{current}}+\\eta\\cdot\\delta_j\\cdot x_{ij}$$ on a separate line, but you can write \"($\\eta$ = learning rate, $\\delta_j$ = error term, $x_{ij}$ = input)\" inline.",
+    "promptTemplatesFolderPath": "",
+    "showAssistant": true,
+    "providers": [
+      {
+        "name": "OpenAI",
+        "endpoint": "https://api.openai.com/v1",
+        "apiKey": "",
+        "models": [
+          {
+            "name": "gpt-3.5-turbo",
+            "maxTokens": 4096
+          },
+          {
+            "name": "gpt-3.5-turbo-16k",
+            "maxTokens": 16384
+          },
+          {
+            "name": "gpt-3.5-turbo-1106",
+            "maxTokens": 16385
+          },
+          {
+            "name": "gpt-4",
+            "maxTokens": 8192
+          },
+          {
+            "name": "gpt-4-turbo",
+            "maxTokens": 128000
+          },
+          {
+            "name": "gpt-4o",
+            "maxTokens": 128000,
+            "maxOutputTokens": 16384,
+            "supportsTemperature": true
+          },
+          {
+            "name": "gpt-4o-mini",
+            "maxTokens": 128000,
+            "maxOutputTokens": 16384,
+            "supportsTemperature": true
+          },
+          {
+            "name": "gpt-5.5",
+            "maxTokens": 1050000,
+            "maxOutputTokens": 128000,
+            "supportsTemperature": false
+          },
+          {
+            "name": "gpt-5.4",
+            "maxTokens": 1050000,
+            "maxOutputTokens": 128000,
+            "supportsTemperature": false
+          },
+          {
+            "name": "gpt-5.4-mini",
+            "maxTokens": 400000,
+            "maxOutputTokens": 128000,
+            "supportsTemperature": false
+          },
+          {
+            "name": "gpt-5.4-nano",
+            "maxTokens": 400000,
+            "maxOutputTokens": 128000,
+            "supportsTemperature": false
+          },
+          {
+            "name": "gpt-4.1",
+            "maxTokens": 1047576,
+            "maxOutputTokens": 32768,
+            "supportsTemperature": true
+          },
+          {
+            "name": "gpt-4.1-mini",
+            "maxTokens": 1047576,
+            "maxOutputTokens": 32768,
+            "supportsTemperature": true
+          },
+          {
+            "name": "o3",
+            "maxTokens": 200000,
+            "maxOutputTokens": 100000,
+            "supportsTemperature": false
+          },
+          {
+            "name": "o4-mini",
+            "maxTokens": 200000,
+            "maxOutputTokens": 100000,
+            "supportsTemperature": false
+          }
+        ],
+        "autoSyncModels": true,
+        "modelSource": "modelsDev",
+        "id": "openai"
+      },
+      {
+        "name": "Gemini",
+        "endpoint": "https://generativelanguage.googleapis.com",
+        "apiKey": "",
+        "models": [
+          {
+            "name": "gemini-3.5-flash",
+            "maxTokens": 1048576,
+            "maxOutputTokens": 65536,
+            "supportsTemperature": true
+          },
+          {
+            "name": "gemini-3.1-pro-preview",
+            "maxTokens": 1048576,
+            "maxOutputTokens": 65536,
+            "supportsTemperature": true
+          },
+          {
+            "name": "gemini-3.1-flash-lite",
+            "maxTokens": 1048576,
+            "maxOutputTokens": 65536,
+            "supportsTemperature": true
+          },
+          {
+            "name": "gemini-3-pro-preview",
+            "maxTokens": 1048576,
+            "maxOutputTokens": 65536,
+            "supportsTemperature": true
+          },
+          {
+            "name": "gemini-3-flash-preview",
+            "maxTokens": 1048576,
+            "maxOutputTokens": 65536,
+            "supportsTemperature": true
+          },
+          {
+            "name": "gemini-2.5-pro",
+            "maxTokens": 1048576,
+            "maxOutputTokens": 65536,
+            "supportsTemperature": true
+          },
+          {
+            "name": "gemini-2.5-flash",
+            "maxTokens": 1048576,
+            "maxOutputTokens": 65536,
+            "supportsTemperature": true
+          },
+          {
+            "name": "gemini-2.5-flash-lite",
+            "maxTokens": 1048576,
+            "maxOutputTokens": 65536,
+            "supportsTemperature": true
+          }
+        ],
+        "autoSyncModels": true,
+        "modelSource": "modelsDev",
+        "id": "gemini"
+      }
+    ]
+  },
+  "migrations": {
+    "migrateToMacroIDFromEmbeddedMacro": true,
+    "useQuickAddTemplateFolder": true,
+    "incrementFileNameSettingMoveToDefaultBehavior": true,
+    "consolidateFileExistsBehavior": true,
+    "repairTemplateFileExistsBehavior": true,
+    "mutualExclusionInsertAfterAndWriteToBottomOfFile": true,
+    "setVersionAfterUpdateModalRelease": true,
+    "addDefaultAIProviders": true,
+    "removeMacroIndirection": true,
+    "migrateFileOpeningSettings": true,
+    "backfillFileOpeningDefaults": true,
+    "setProviderModelDiscoveryMode": true,
+    "migrateProviderApiKeysToSecretStorage": true,
+    "migrateToMultipleTemplateFolders": true,
+    "refreshStaleDefaultModelSeeds": true,
+    "pinAiModelRefs": true
+  }
+}

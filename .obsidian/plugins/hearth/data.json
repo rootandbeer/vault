@@ -1,0 +1,277 @@
+{
+  "title": "My Vault",
+  "showTitle": true,
+  "logo": "",
+  "themeColorTarget": "none",
+  "showSearch": true,
+  "searchPlaceholder": "Search or command",
+  "showNewNoteButton": true,
+  "newNoteButtonMode": "newNote",
+  "searchContents": true,
+  "searchEngine": "builtin",
+  "backgroundKind": "none",
+  "backgroundValue": "",
+  "backgroundOpacity": 0.35,
+  "backgroundBlur": 2,
+  "openOnStartup": true,
+  "replaceNewTabs": true,
+  "focusSearchOnOpen": false,
+  "liveRefresh": false,
+  "mobileSearchOnly": false,
+  "showMobileActionBar": true,
+  "mobileActionButtons": [
+    {
+      "id": "action-new-note",
+      "label": "New note",
+      "icon": "plus",
+      "type": "command",
+      "target": "hearth:new-note"
+    },
+    {
+      "id": "action-new-drawing",
+      "label": "New drawing",
+      "icon": "pen-tool",
+      "type": "command",
+      "target": "hearth:new-drawing"
+    },
+    {
+      "id": "action-record-voice",
+      "label": "Record voice",
+      "icon": "mic",
+      "type": "command",
+      "target": "hearth:record-voice"
+    },
+    {
+      "id": "action-daily-note",
+      "label": "Daily note",
+      "icon": "calendar",
+      "type": "command",
+      "target": "hearth:open-daily-note"
+    }
+  ],
+  "disableExternalCalls": false,
+  "openIn": "tab",
+  "openInOverrides": {
+    "link": "default",
+    "search": "default",
+    "card": "default",
+    "newNote": "default"
+  },
+  "openFromOutside": "same",
+  "lowPower": false,
+  "lowPowerBackgroundColor": "#4a4459",
+  "compact": false,
+  "arrangeButtonVisibility": "always",
+  "dashboardSwitcherVisibility": "always",
+  "cardOpacity": 0.5,
+  "cardBlur": 7,
+  "cardRadius": 14,
+  "cardBorderWidth": 1,
+  "hiddenFilters": [],
+  "dashboards": [
+    {
+      "id": "dash-mrqmcwwm-6134",
+      "name": "Dashboard 1",
+      "cards": [
+        {
+          "id": "card-clock",
+          "kind": "clock",
+          "title": "",
+          "x": 0,
+          "y": 0,
+          "w": 12,
+          "h": 3,
+          "fx": 0,
+          "fw": 0.2845744680851064,
+          "fy": 0,
+          "fh": 145
+        },
+        {
+          "id": "card-daily",
+          "kind": "daily",
+          "title": "Today",
+          "x": 0,
+          "y": 3,
+          "w": 7,
+          "h": 6,
+          "fx": 0.63125,
+          "fw": 0.36875,
+          "fy": 0,
+          "fh": 845
+        },
+        {
+          "id": "card-calendar",
+          "kind": "calendar",
+          "title": "Calendar",
+          "x": 7,
+          "y": 3,
+          "w": 5,
+          "h": 6,
+          "fx": 0,
+          "fw": 0.284375,
+          "fy": 159,
+          "fh": 353
+        },
+        {
+          "id": "card-stats",
+          "kind": "stats",
+          "title": "Vault",
+          "x": 7,
+          "y": 9,
+          "w": 5,
+          "h": 4,
+          "fx": 0.295,
+          "fw": 0.325,
+          "fy": 0,
+          "fh": 145
+        },
+        {
+          "id": "card-mrrakpp5-2397",
+          "x": 0,
+          "y": 2,
+          "kind": "embed",
+          "title": "Mood Tracker",
+          "target": "References/Mood Tracker.md",
+          "w": 6,
+          "h": 3,
+          "fx": 0.294375,
+          "fy": 161,
+          "fw": 0.326875,
+          "fh": 468,
+          "cardBlur": 0,
+          "scale": 0.9
+        },
+        {
+          "id": "card-mrvgv24r-5971",
+          "x": 0,
+          "y": 6,
+          "kind": "links",
+          "title": "Goals & Projects",
+          "links": [
+            {
+              "id": "link-mrvgvb8a",
+              "label": "Goals",
+              "icon": "goal",
+              "target": "references/goals.md",
+              "type": "note",
+              "sizeW": 100,
+              "sizeH": 96
+            },
+            {
+              "id": "link-mrvgwdz4",
+              "label": "Projects",
+              "icon": "hammer",
+              "target": "references/project board.md",
+              "type": "note",
+              "sizeW": 108,
+              "sizeH": 104
+            },
+            {
+              "id": "link-mrvj0r5j",
+              "label": "Goal Documentation",
+              "icon": "link",
+              "target": "Clippings/How I Manage Projects and Goals in Obsidian.md",
+              "type": "note",
+              "sizeW": 136,
+              "sizeH": 96
+            }
+          ],
+          "w": 6,
+          "h": 2,
+          "fx": 0.293125,
+          "fy": 645,
+          "fw": 0.326875,
+          "fh": 198
+        },
+        {
+          "id": "card-mrvlmlkf-2606",
+          "x": 0,
+          "y": 4,
+          "kind": "recent",
+          "title": "Recent Files",
+          "tasks": {
+            "folderScope": "whitelist"
+          },
+          "w": 4,
+          "h": 4,
+          "fx": 0.00125,
+          "fy": 528,
+          "fw": 0.283125,
+          "fh": 316,
+          "savedSearch": {},
+          "recentTypes": [
+            "markdown",
+            "excalidraw",
+            "canvas",
+            "bases",
+            "audio",
+            "pdf",
+            "documents",
+            "spreadsheets",
+            "presentations",
+            "other"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dash-mrvl3tnf-1466",
+      "name": "Goal & Project Tracking",
+      "cards": [
+        {
+          "id": "card-mrvl40nz-7502",
+          "x": 0,
+          "y": 0,
+          "kind": "dataview",
+          "title": "Goals",
+          "dataview": {
+            "query": "TABLE WITHOUT ID\n\t(link(file.path, alias)) as title,\n\tBar\nFROM #goal\nWHERE type != \"Archive\"\nSORT Type DESC"
+          },
+          "w": 6,
+          "h": 4,
+          "fx": 0,
+          "fy": 0,
+          "fw": 0.2325,
+          "fh": 843
+        },
+        {
+          "id": "card-mrvl5eou-9872",
+          "x": 5,
+          "y": 0,
+          "kind": "dataview",
+          "title": "Projects",
+          "dataview": {
+            "query": "\nTABLE WITHOUT ID\n\t(link(file.path, alias[0])) as title,\n\tsubtitle,\n\tBar,\n\t(\"Goal: \" + link(Goal, Goal.alias)) as goal\nFROM #project\nWHERE status = \"In Progress\"\n"
+          },
+          "w": 6,
+          "h": 4,
+          "fx": 0.2425,
+          "fy": 0,
+          "fw": 0.7575,
+          "fh": 843
+        }
+      ],
+      "showSearch": false,
+      "header": {
+        "showTitle": true,
+        "title": "Goals & Projects"
+      }
+    }
+  ],
+  "activeDashboardId": "dash-mrqmcwwm-6134",
+  "pinnedCards": [],
+  "gridColumns": 12,
+  "rowHeight": 92,
+  "favorites": [],
+  "fitToPage": true,
+  "taskNotesStatusField": "status",
+  "taskNotesDueField": "due",
+  "taskNotesPriorityField": "priority",
+  "taskNotesDoneValue": "done",
+  "taskFieldsEnabled": false,
+  "taskFields": [],
+  "customFileIcons": true,
+  "iconizeIconProperty": "icon",
+  "maxWidth": 1600,
+  "lastSeenVersion": "2.0.0"
+}

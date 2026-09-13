@@ -1,0 +1,32 @@
+filters:
+  and:
+    - note.categories.contains(link("Interviews"))
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Name
+  note.topics:
+    displayName: Topics
+  note.org:
+    displayName: Organization
+  note.role:
+    displayName: Role
+  note.status:
+    displayName: Status
+views:
+  - type: table
+    name: Interviews
+    order:
+      - file.name
+      - topics
+      - org
+      - role
+      - status
+    sort:
+      - property: file.name
+        direction: ASC
+      - property: topics
+        direction: ASC
+    columnSize:
+      file.name: 280
+      note.org: 160

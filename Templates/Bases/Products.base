@@ -1,0 +1,24 @@
+filters:
+  and:
+    - note.categories.contains(link("Products"))
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Name
+  note.type:
+    displayName: Type
+  note.url:
+    displayName: URL
+views:
+  - type: table
+    name: Products
+    order:
+      - file.name
+      - type
+      - url
+    sort:
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 200
+      note.type: 150

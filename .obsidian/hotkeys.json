@@ -1,0 +1,11 @@
+{
+  "templater-obsidian:Templates/Import Section.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "I"
+    }
+  ]
+}

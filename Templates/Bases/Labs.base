@@ -1,0 +1,29 @@
+filters:
+  and:
+    - note.categories.contains(link("Labs"))
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Name
+  note.topics:
+    displayName: Topics
+  note.platform:
+    displayName: Platform
+  note.difficulty:
+    displayName: Difficulty
+  note.status:
+    displayName: Status
+views:
+  - type: table
+    name: Labs
+    order:
+      - file.name
+      - topics
+      - platform
+      - difficulty
+      - status
+    sort:
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 250

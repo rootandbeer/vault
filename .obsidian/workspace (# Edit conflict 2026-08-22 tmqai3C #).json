@@ -1,0 +1,288 @@
+{
+  "main": {
+    "id": "dadbf41f4a7f35cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "6aae5193e26d53d2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2ca8b94ff0771c55",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "References/Sites.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Sites"
+            }
+          },
+          {
+            "id": "cb1bcd651b42ed00",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.13.7"
+            }
+          },
+          {
+            "id": "043ca3592dea1385",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Categories/Books.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Books"
+            }
+          },
+          {
+            "id": "92b9c773f0bbe754",
+            "type": "leaf",
+            "state": {
+              "type": "hearth-home-view",
+              "state": {},
+              "icon": "hearth-crystal",
+              "title": "Home"
+            }
+          },
+          {
+            "id": "05eaf75c0a5cb2d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Categories/Interviews.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Interviews"
+            }
+          },
+          {
+            "id": "0d5db5464e8e29b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "conflict-files-obsidian-git"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "98918b8290a39501",
+    "type": "split",
+    "children": [
+      {
+        "id": "e247d3c32e215042",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7e08eeeedfb9c42a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "fb693bc05d00c01a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:daily",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "e9970796580ce53b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 646.5
+  },
+  "right": {
+    "id": "08a40fa0e1b06eec",
+    "type": "split",
+    "children": [
+      {
+        "id": "31de16aee06dab4f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fde6586e86992d90",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Sites.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "d8ed68cb5b43e8b5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "44672111c17738f9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "be7d875492f0217a",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 347.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "book-search-plus:Create new book note": false,
+      "mood-tracker:Open Mood Tracking History": false,
+      "obsidian-kanban:Create new board": false,
+      "obsidian-git:Open Git source control": false,
+      "mood-tracker:Open Mood Tracker": false,
+      "daily-notes:Open today's daily note": false,
+      "hearth:Open Hearth home": false
+    }
+  },
+  "active": "0d5db5464e8e29b9",
+  "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Categories/Interviews.md",
+    "Notes/Removing Middle Click On Touchpad in Linux Mint.md",
+    "Daily/2026-08-21.md",
+    "Categories/Guides.md",
+    "Categories/Evergreen.md",
+    "Categories/Companies.md",
+    "Categories/Clippings.md",
+    "Categories/Books.md",
+    "Categories/Board games.md",
+    "References/Suburban Studios Hotel.md",
+    "References/Salt Lake City.md",
+    "Notes/Summer Salt Lake City Trip.md",
+    "Daily/2026-08-14.md",
+    "References/Recursion.md",
+    "Attachments/book covers/Recursion.jpg",
+    "References/Sites.md",
+    "References/Demon Copperhead.md",
+    "Attachments/book covers/Demon Copperhead.jpg",
+    "Categories/Trips.md",
+    "Attachments/Trips/Summer Salt Lake City Trip/Utah State Capitol Building/IMG_2434.jpg",
+    "Attachments/Trips/Summer Salt Lake City Trip/Utah State Capitol Building/IMG_2439.mp4",
+    "Attachments/Trips/Summer Salt Lake City Trip/Utah State Capitol Building/IMG_2438.mp4",
+    "Attachments/Trips/Summer Salt Lake City Trip/Utah State Capitol Building/IMG_2435.jpg",
+    "Attachments/Trips/Summer Salt Lake City Trip/Utah State Capitol Building/IMG_2436.jpg",
+    "Attachments/Trips/Summer Salt Lake City Trip/Utah State Capitol Building/9BF949AB-0910-4BDF-A7B1-3C1EE31547ED.jpg",
+    "Attachments/Trips/Summer Salt Lake City Trip/Utah State Capitol Building/IMG_2433.jpg",
+    "Attachments/Trips/Summer Salt Lake City Trip/Utah State Capitol Building/IMG_2440.jpg",
+    "Attachments/Trips/Summer Salt Lake City Trip/Temple Square/2FA12C93-081C-4218-87B8-16A1302C44AC.jpg",
+    "Attachments/Trips/Summer Salt Lake City Trip/Utah State Capitol Building/06FA48C7-CAD3-4085-BC7C-C698979A325E.mp4",
+    "Attachments/Trips/Summer Salt Lake City Trip/Utah State Capitol Building/1FA1ACDE-C498-45FA-B9EE-31BED675BC9C.mp4",
+    "Attachments/Trips/Summer Salt Lake City Trip/Utah State Capitol Building/IMG_2431.jpg",
+    "References/Big Cottonwood Canyon.md",
+    "References/Silver Lake.md",
+    "References/Temple Square.md",
+    "References/Utah State Capitol Building.md",
+    "References/Park City.md",
+    "Attachments/Trips/Summer Salt Lake City Trip/Temple Square",
+    "Attachments/Trips/Summer Salt Lake City Trip/Park City",
+    "Attachments/Trips/Summer Salt Lake City Trip/06FA48C7-CAD3-4085-BC7C-C698979A325E (1).mp4",
+    "Attachments/Trips/Summer Salt Lake City Trip/1FA1ACDE-C498-45FA-B9EE-31BED675BC9C (1).mp4",
+    "Attachments/Trips/Summer Salt Lake City Trip/Utah State Capitol Building",
+    "References/Utah History Museum.md",
+    "Attachments/Trips/Summer Salt Lake City Trip/Utah History Museum",
+    "Daily/2026-08-18.md",
+    "References/Napa.md"
+  ]
+}

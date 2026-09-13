@@ -1,0 +1,56 @@
+{
+  "is_obsidian_vault": true,
+  "smart_blocks": {
+    "embed_blocks": true,
+    "min_chars": 200,
+    "embed_model": {
+      "model_key": "andersonbcdefg/bge-small-4096"
+    }
+  },
+  "smart_sources": {
+    "single_file_data_path": ".smart-env/smart_sources.json",
+    "min_chars": 200,
+    "embed_model": {
+      "adapter": "transformers",
+      "transformers": {
+        "legacy_transformers": false,
+        "model_key": "TaylorAI/bge-micro-v2"
+      },
+      "model_key": "Xenova/jina-embeddings-v2-small-en",
+      "TaylorAI/bge-micro-v2": {}
+    }
+  },
+  "file_exclusions": "Untitled",
+  "folder_exclusions": "smart-chats",
+  "smart_view_filter": {
+    "render_markdown": true,
+    "show_full_path": false,
+    "expanded_view": false
+  },
+  "excluded_headings": "",
+  "language": "en",
+  "new_user": true,
+  "re_import_wait_time": 13,
+  "smart_chat_threads": {
+    "chat_model": {
+      "adapter": "ollama",
+      "ollama": {}
+    },
+    "active_thread_key": "",
+    "system_prompt": "",
+    "detect_self_referential": true,
+    "review_context": true,
+    "stream": true,
+    "language": "en",
+    "modifier_key_to_send": "shift",
+    "use_tool_calls": true
+  },
+  "smart_notices": {
+    "muted": {
+      "no context": true
+    }
+  },
+  "version": "",
+  "smart_chats_folder": "00smart-chats",
+  "expanded_view": false
+}
