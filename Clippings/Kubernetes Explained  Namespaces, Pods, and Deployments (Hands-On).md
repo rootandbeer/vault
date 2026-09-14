@@ -1,6 +1,7 @@
 ---
 categories:
   - "[[Clippings]]"
+  - "[[Guides]]"
 tags:
   - clippings
 author:
