@@ -68,6 +68,7 @@ views:
       - file.name
       - author
       - rating
+      - status
     image: note.cover
     imageFit: contain
     cardSize: 120
